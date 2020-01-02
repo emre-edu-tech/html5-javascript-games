@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loading Background Images</title>
+    <style>
+        @font-face {
+            src: url('fonts/LondrinaSolid-Regular.otf');
+            font-family: LondrinaSolid-Regular;
+        }
+
+        body{
+            margin: 0px auto;
+        }
+
+        #stage{
+            width: 871px;
+            height: 900px;
+            display: block;
+            border: 1px dashed black;
+        }
+
+        .animal{
+            width: 256px;
+            height: 256px;
+            float: left;
+            display: block;
+            border: 1px dashed black;
+            margin-top: 50px;
+            margin-left: 25px;
+        }
+
+        #cat{
+            background-image: url('images/smiling-cat.png');
+        }
+
+        #persian-cat{
+            background-image: url('images/persian-cat.jpg');
+        }
+
+        #orange-cat{
+            background-image: url('images/orange-cat.png');
+        }
+
+        h1{
+            clear: left;
+            text-align: center;
+            padding-top: 50px;
+            font-family: LondrinaSolid-Regular;
+        }
+    </style>
+</head>
+<body>
+    <div id="stage">
+        <div class="animal" id="cat"></div>
+        <div class="animal" id="persian-cat"></div>
+        <div class="animal" id="orange-cat"></div>
+        <h1>Dangerous Elements!</h1>
+    </div>
+</body>
+</html>

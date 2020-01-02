@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Absolute Positioning</title>
+
+    <style>
+        #stage{
+            width: 400px;
+            height: 300px;
+            border: dashed 1px black;
+            /* below code is necessary to positlion child element to its absolute position */
+            position: relative; 
+        }
+
+        #square{
+            position: absolute;
+            top: 120px;
+            left: 200px;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+
+        #stage2{
+            width: 400px;
+            height: 300px;
+            border: dashed 1px black;
+            /* below code is necessary to positlion child element to its absolute position */
+            position: relative;
+        }
+
+        #square2{
+            position: absolute;
+            bottom: 120px;
+            right: 200px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="stage">
+        <div id="square"></div>
+    </div>
+    <div id="stage2">
+        <div id="square2"></div>
+    </div>  
+</body>
+</html>
